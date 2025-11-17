@@ -1,0 +1,19 @@
+{
+  "name": "turborepo-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "npm@11.4.2",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "prettier": "^3.3.3",
+    "turbo": "^2.0.6",
+    "typescript": "^5.4.5"
+  }
+}
