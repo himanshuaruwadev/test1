@@ -1,0 +1,21 @@
+{
+  "name": "@turborepo/config",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -b",
+    "lint": "eslint ."
+  },
+  "exports": {
+    "./env": "./src/env.ts",
+    "./types": "./src/types.ts"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "eslint": "^9.6.0",
+    "typescript": "^5.4.5"
+  }
+}
